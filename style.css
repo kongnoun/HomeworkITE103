@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Organo;
+    src: url(fonts\Organo.ttf);
+}
+
+h1, h2{
+    font-family: Organo, Verdana, arial;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+p{
+    font-family: "courier new";
+    font-size: 1.1em;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+button{
+    height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#cd22e7 0%,#5025ee 100%);
+    
+
+}
+
+.btn{
+    position: relative;
+    display: inline-flex;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+    margin: 17px 20px;
+    overflow: hidden;
+    transition: all .4s;
+  }
+  .btn .inner{
+    position: absolute;
+    width: 250%;
+    height: 100%;
+    left: -100%;
+    z-index: -1;
+    transition: all .4s;
+  }
+  .btn button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'organo', sans-serif;
+    font-weight: bold;
+  }
+  .btn:hover{
+    transform: scale(1.03);
+  }
+  .btn:hover .inner{
+    left: 0;
+  }
+  .btn1 .inner{
+    background: -webkit-linear-gradient(right, #6722f1,#eb0fff,#5522fa,#c507ff);
+
+    
+  }
